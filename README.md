@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - News homepage
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
@@ -92,3 +93,6 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# news-homepage
+>>>>>>> 33214a8b045de49ab975bdebdf4b45ffc211263d
