@@ -18,3 +18,51 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+body {
+  padding: 50px 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.container-article img {
+  width: 65%;
+  margin: 50px 0px 20px 0;
+}
+.container-article .details-container {
+  /* display: flex;
+  width: 65%;
+  height: 180px;
+  align-items: flex-start;
+  gap: 50px; */
+  width: 65%;
+  height: 180px;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.details-container h1 {
+  font-size: 35px;
+  width: 80%;
+  font-weight: 800;
+}
+.details-container div p {
+  width: 95%;
+  font-size: 12px;
+  text-align: justify;
+  line-height: 1.5;
+  color: gray;
+}
+.details-container div {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
