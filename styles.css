@@ -98,17 +98,44 @@ button {
 .container-aside div h5 {
   color: white;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .container-aside div p {
   margin-top: 15px;
   font-weight: 100;
-  font-size: 12px;
-  width: 90%;
-  color: gray;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  width: 85%;
+  color: var(--dark-grayish-blue);
 }
 .container-aside hr {
   width: 100%;
   margin-top: 25px;
   color: gray;
+}
+.container-listAd {
+  display: flex;
+  margin-top: 50px;
+}
+.container-listAd .listAdDetail {
+  display: flex;
+}
+.listAdDetail img {
+  width: 120px;
+}
+.listAdDetail div {
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.listAdDetail div h2 {
+  color: var(--grayish-blue);
+  font-size: 25px;
+}
+.listAdDetail div p {
+  font-size: 12px;
+}
+.listAdDetail {
 }
