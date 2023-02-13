@@ -36,6 +36,10 @@ nav {
   color: grey;
   font-size: 14px;
 }
+.nav-menu ul li:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -49,23 +53,22 @@ main {
   width: 100%;
 }
 .container-article .details-container {
-  margin-top: 15px;
-  width: 95%;
-  height: 180px;
+  padding-top: 40px;
+  width: 100%;
   align-items: flex-start;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .details-container h1 {
-  font-size: 40px;
-  width: 90%;
+  font-size: 45px;
+  width: 70%;
   font-weight: 800;
 }
 .details-container div p {
   width: 95%;
-  font-size: 12px;
+  font-size: 14px;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.8;
   color: gray;
   margin-top: 5px;
 }
@@ -84,6 +87,10 @@ button {
   letter-spacing: 3px;
   font-weight: 600;
   font-size: 12px;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: var(--very-dark-blue);
 }
 .container-aside {
   width: 90%;
@@ -103,6 +110,10 @@ button {
   color: white;
   margin-top: 30px;
   font-size: 18px;
+}
+.container-aside div h5:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
 }
 .container-aside div p {
   margin-top: 15px;
@@ -134,18 +145,23 @@ button {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 300px;
+  width: 250px;
 }
 .listAdDetail div h2 {
   color: var(--grayish-blue);
   font-size: 30px;
 }
 .listAdDetail div h3 {
-  font-weight: 700;
+  font-weight: bold;
   width: 100%;
+}
+.listAdDetail div h3:hover {
+  color: var(--soft-red);
+  cursor: pointer;
 }
 .listAdDetail div p {
   font-size: 14px;
   color: var(--dark-grayish-blue);
   width: 80%;
+  line-height: 1.2;
 }
