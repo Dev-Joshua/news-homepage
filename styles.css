@@ -32,13 +32,39 @@ nav {
 .nav-menu ul {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 40px;
   color: grey;
   font-size: 14px;
 }
 .nav-menu ul li:hover {
   color: var(--soft-orange);
   cursor: pointer;
+}
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+  gap: 0.65rem;
+}
+.hamburger-button > div {
+  background: #000;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+.hamburger-button:hover div:first-child {
+  transform: rotate(45deg);
+}
+.hamburger-button:hover div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-button:hover div:last-child {
+  transform: rotate(-45deg);
 }
 main {
   display: grid;
@@ -77,7 +103,7 @@ main {
   gap: 30px;
   flex-direction: column;
 }
-button {
+.button-article {
   width: 150px;
   height: 40px;
   background-color: var(--soft-red);
@@ -89,8 +115,9 @@ button {
   font-size: 12px;
   margin-top: 10px;
 }
-button:hover {
+.button-article:hover {
   background-color: var(--very-dark-blue);
+  cursor: pointer;
 }
 .container-aside {
   width: 90%;
@@ -133,9 +160,11 @@ button:hover {
   display: flex;
   margin-top: 50px;
   width: 100%;
+  gap: 20px;
 }
 .container-listAd .listAdDetail {
   display: flex;
+  width: 100%;
 }
 .listAdDetail img {
   width: 120px;
@@ -145,7 +174,6 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 250px;
 }
 .listAdDetail div h2 {
   color: var(--grayish-blue);
@@ -164,4 +192,7 @@ button:hover {
   color: var(--dark-grayish-blue);
   width: 80%;
   line-height: 1.2;
+}
+
+@media (min-width: 375px) {
 }
